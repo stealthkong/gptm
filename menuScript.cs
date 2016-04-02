@@ -19,7 +19,8 @@ public class menuScript : MonoBehaviour {
 		quitMenu.enabled = false;
 
 	}
-	
+
+	// This is used when the user presses the 'Quit' button	
 	public void ExitPress()
 	{
 		quitMenu.enabled = true;
@@ -28,6 +29,7 @@ public class menuScript : MonoBehaviour {
 		exitText.enabled = false;
 	}
 
+	// Used when the user presses the 'No' button on the Quit menu
 	public void NoPress()
 	{
 		quitMenu.enabled = false;
@@ -36,11 +38,13 @@ public class menuScript : MonoBehaviour {
 		exitText.enabled = true;
 	}
 
+	// Used when the user pushes the 'Play' button
 	public void StartLevel()
 	{
 		Application.LoadLevel (1);
 	}
 
+	// Used when the user pushes the 'God Mode' button
 	public void StartGod()
 	{
 		Application.LoadLevel (1);
