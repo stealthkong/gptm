@@ -49,6 +49,7 @@
      <Compile Include="Assets\Scripts\doorScript.cs" />
      <Compile Include="Assets\Scripts\laserScript.cs" />
      <Compile Include="Assets\Scripts\menuScript.cs" />
+     <Compile Include="Assets\Scripts\pause.cs" />
      <Compile Include="Assets\Scripts\playerController.cs" />
      <Compile Include="Assets\Scripts\playerKill.cs" />
      <Compile Include="Assets\Scripts\sawBladeScript.cs" />

@@ -3,7 +3,7 @@ using System.Collections;
 
 public class doorScript : MonoBehaviour {
 
-	void OnTriggerEnter(Collider2D other)
+	void OnTriggerEnter(Collider other)
 	{
 		if(Input.GetKeyDown (KeyCode.W))
 		Application.LoadLevel (2);
