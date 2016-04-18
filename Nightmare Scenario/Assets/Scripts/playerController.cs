@@ -5,15 +5,25 @@ public class playerController : MonoBehaviour
 {
 
 	//Movement
-	public float speed;
+	public float speed = 3f;
 	public float jump;
+	public float move;
 	float moveVelocity;
+	bool facingRight = true;
+
+	Animator anim;
 
 	//Grounded Vars
 	bool grounded = true;
-	
-	void Update () 
+
+	void Start()
 	{
+		anim = GetComponent<Animator> ();
+	}
+	
+	void FixedUpdate () 
+	{
+
 		//Jumping
 		if (Input.GetKeyDown (KeyCode.Space) || Input.GetKeyDown (KeyCode.UpArrow) || Input.GetKeyDown (KeyCode.Z) || Input.GetKeyDown (KeyCode.W)) 
 		{
@@ -24,6 +34,10 @@ public class playerController : MonoBehaviour
 		}
 
 		moveVelocity = 0;
+
+		// Movement animation
+		move = Input.GetAxis ("Horizontal");
+		anim.SetFloat ("Speed", Mathf.Abs (move));
 
 		//Left Right Movement
 		if (Input.GetKey (KeyCode.LeftArrow) || Input.GetKey (KeyCode.A)) 
@@ -37,6 +51,7 @@ public class playerController : MonoBehaviour
 
 		GetComponent<Rigidbody2D> ().velocity = new Vector2 (moveVelocity, GetComponent<Rigidbody2D> ().velocity.y);
 
+
 	}
 	//Check if Grounded
 	void OnTriggerEnter2D()
@@ -47,4 +62,12 @@ public class playerController : MonoBehaviour
 	{
 		grounded = false;
 	}
+
+	//public void Flip()
+	//{
+	//	facingRight = !facingRight;
+	//	Vector3 theScale = Transform.localScale;
+	//	theScale.x *= -1;
+	//	Transform.localScale = theScale;
+	//}
 }
