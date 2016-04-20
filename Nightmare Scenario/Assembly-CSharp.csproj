@@ -45,7 +45,6 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\characterController.cs" />
      <Compile Include="Assets\Scripts\doorScript.cs" />
      <Compile Include="Assets\Scripts\laserScript.cs" />
      <Compile Include="Assets\Scripts\menuScript.cs" />

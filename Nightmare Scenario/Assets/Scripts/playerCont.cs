@@ -13,6 +13,11 @@ public class playerCont : MonoBehaviour {
 	float groundRadius = 0.2f;
 	public LayerMask whatIsGround;
 	public float jumpForce = 300f;
+	public int deathCount = 0;
+	public GUIText livesBox;
+	public int level = 1;
+	public bool playerDead;
+	public GameObject restartText;
 
 	// Use this for initialization
 	void Start () {
@@ -23,6 +28,15 @@ public class playerCont : MonoBehaviour {
 	
 	// Update is called once per frame
 	void FixedUpdate () {
+		if (playerDead == true) {
+
+			restartText.SetActive(true);
+
+			if(Input.GetKeyDown (KeyCode.R))
+				Application.LoadLevel (level);
+			return;
+
+		}
 
 		grounded = Physics2D.OverlapCircle (groundCheck.position, groundRadius, whatIsGround);
 		anim.SetBool ("Ground", grounded);
@@ -45,6 +59,7 @@ public class playerCont : MonoBehaviour {
 
 	void Update()
 	{
+
 		if (grounded && Input.GetKeyDown(KeyCode.Space)) 
 		{
 			anim.SetBool ("Ground", false);
@@ -58,6 +73,32 @@ public class playerCont : MonoBehaviour {
 		Vector3 theScale = transform.localScale;
 		theScale.x *= -1;
 		transform.localScale = theScale;
+	}
+
+	void OnTriggerEnter2D(Collider2D other)
+	{
+		if (other.tag == "sawBlade") {
+			Debug.Log ("Dead!");
+			GetComponent<Rigidbody2D> ().velocity=Vector2.zero;
+			anim.SetBool ("death", true);
+			playerDead = true;
+			//GetComponent<Rigidbody2D> ().AddForce(new Vector2(0, 200)); 
+			deathCount += 1;
+			//Application.LoadLevel (1);
+		}
+
+		if (other.tag == "door") {
+			//if(Input.GetKeyDown (KeyCode.W))
+			//{
+			level += 1;
+			Application.LoadLevel (level);
+			//}
+		}
+	}
+
+	void updateLives()
+	{
+		livesBox.text = "Lives Lost: " + deathCount;
 	}
 	
 }

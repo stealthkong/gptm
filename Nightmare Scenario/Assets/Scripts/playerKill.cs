@@ -10,9 +10,10 @@ public class playerKill : MonoBehaviour {
 	//public void OnCollisionEnter(Collision collision)
 	public void OnTriggerEnter2D(Collider2D collision)
 	{
-		if(collision.gameObject.tag == "sawBlade" )
+		if(collision.gameObject.tag == "Player" )
 		{
-			Destroy(this);
+			Destroy(gameObject);
+			deathCount += 1;
 		}
 	}
 
