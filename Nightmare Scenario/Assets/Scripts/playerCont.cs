@@ -15,9 +15,10 @@ public class playerCont : MonoBehaviour {
 	public float jumpForce = 300f;
 	public int deathCount = 0;
 	public GUIText livesBox;
-	public int level = 1;
 	public bool playerDead;
 	public GameObject restartText;
+	public GameObject pressKey;
+	public int level = 1;
 
 	// Use this for initialization
 	void Start () {
@@ -31,6 +32,7 @@ public class playerCont : MonoBehaviour {
 		if (playerDead == true) {
 
 			restartText.SetActive(true);
+			pressKey.SetActive(true);
 
 			if(Input.GetKeyDown (KeyCode.R))
 				Application.LoadLevel (level);
@@ -60,6 +62,8 @@ public class playerCont : MonoBehaviour {
 	void Update()
 	{
 
+		livesBox.text = "Lives Lost: " + deathCount;
+
 		if (grounded && Input.GetKeyDown(KeyCode.Space)) 
 		{
 			anim.SetBool ("Ground", false);
@@ -87,18 +91,13 @@ public class playerCont : MonoBehaviour {
 			//Application.LoadLevel (1);
 		}
 
-		if (other.tag == "door") {
+		//if (other.tag == "door") {
 			//if(Input.GetKeyDown (KeyCode.W))
 			//{
-			level += 1;
-			Application.LoadLevel (level);
+		//	level += 1;
+		//	Application.LoadLevel (level);
 			//}
-		}
+		//}
 	}
 
-	void updateLives()
-	{
-		livesBox.text = "Lives Lost: " + deathCount;
-	}
-	
 }

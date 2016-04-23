@@ -14,7 +14,7 @@ public class laserScript : MonoBehaviour {
 	
 	// Use this for initialization
 	void Start () {
-		laserFire ();
+		Invoke ("laserFire", 10f);
 	}
 
 	
@@ -28,6 +28,8 @@ public class laserScript : MonoBehaviour {
 
 	void laserFire()
 	{
+		//GameObject blast = (GameObject)Instantiate (laserBlast);
+
 		if (currentState == "Moving to laserPos1") {
 			currentState = "Moving to laserPos2";
 			projectile = laserPos2.position;
@@ -35,6 +37,6 @@ public class laserScript : MonoBehaviour {
 			currentState = "Moving to laserPos2";
 			currentState = "Moving to laserPos1";
 		}
-		Invoke ("laserFire", resetTime);
+		//Invoke ("laserFire", resetTime);
 	}
 }

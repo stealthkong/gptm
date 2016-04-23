@@ -45,9 +45,13 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\doorScript.cs" />
+     <Compile Include="Assets\Scripts\DontDestroy.cs" />
+     <Compile Include="Assets\Scripts\Door Scripts\doorScriptlv1.cs" />
+     <Compile Include="Assets\Scripts\Door Scripts\doorScriptlv2.cs" />
+     <Compile Include="Assets\Scripts\holdPlayerPlat.cs" />
      <Compile Include="Assets\Scripts\laserScript.cs" />
      <Compile Include="Assets\Scripts\menuScript.cs" />
+     <Compile Include="Assets\Scripts\movingPlatform.cs" />
      <Compile Include="Assets\Scripts\pause.cs" />
      <Compile Include="Assets\Scripts\playerCont.cs" />
      <Compile Include="Assets\Scripts\playerController.cs" />
