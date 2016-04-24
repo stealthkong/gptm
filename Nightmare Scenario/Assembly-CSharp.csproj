@@ -48,8 +48,11 @@
      <Compile Include="Assets\Scripts\DontDestroy.cs" />
      <Compile Include="Assets\Scripts\Door Scripts\doorScriptlv1.cs" />
      <Compile Include="Assets\Scripts\Door Scripts\doorScriptlv2.cs" />
+     <Compile Include="Assets\Scripts\Door Scripts\doorScriptlv3.cs" />
+     <Compile Include="Assets\Scripts\Door Scripts\doorScriptlv4.cs" />
      <Compile Include="Assets\Scripts\holdPlayerPlat.cs" />
      <Compile Include="Assets\Scripts\laserScript.cs" />
+     <Compile Include="Assets\Scripts\legDropScript.cs" />
      <Compile Include="Assets\Scripts\menuScript.cs" />
      <Compile Include="Assets\Scripts\movingPlatform.cs" />
      <Compile Include="Assets\Scripts\pause.cs" />

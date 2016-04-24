@@ -91,6 +91,16 @@ public class playerCont : MonoBehaviour {
 			//Application.LoadLevel (1);
 		}
 
+		if (other.tag == "legDrop") {
+			Debug.Log ("Dead!");
+			GetComponent<Rigidbody2D> ().velocity=Vector2.zero;
+			anim.SetBool ("death", true);
+			playerDead = true;
+			//GetComponent<Rigidbody2D> ().AddForce(new Vector2(0, 200)); 
+			deathCount += 1;
+			//Application.LoadLevel (1);
+		}
+
 		//if (other.tag == "door") {
 			//if(Input.GetKeyDown (KeyCode.W))
 			//{
