@@ -54,17 +54,24 @@
      <Compile Include="Assets\Scripts\laserScript.cs" />
      <Compile Include="Assets\Scripts\legDropScript.cs" />
      <Compile Include="Assets\Scripts\menuScript.cs" />
+     <Compile Include="Assets\Scripts\messageBoardScript.cs" />
      <Compile Include="Assets\Scripts\movingPlatform.cs" />
      <Compile Include="Assets\Scripts\pause.cs" />
      <Compile Include="Assets\Scripts\playerCont.cs" />
      <Compile Include="Assets\Scripts\playerController.cs" />
      <Compile Include="Assets\Scripts\playerKill.cs" />
      <Compile Include="Assets\Scripts\sawBladeScript.cs" />
+ <Reference Include="UnityEngine.Advertisements">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Advertisements/UnityEngine.Advertisements.dll</HintPath>
+ </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Networking">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Analytics">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
  </Reference>
  <Reference Include="Mono.Cecil">
  <HintPath>C:/Program Files/Unity/Editor/Data/Managed/Mono.Cecil.dll</HintPath>
