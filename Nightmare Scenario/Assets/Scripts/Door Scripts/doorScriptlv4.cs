@@ -6,7 +6,7 @@ public class doorScriptlv4 : MonoBehaviour {
 	void OnTriggerEnter2D(Collider2D other)
 	{
 		if (other.tag == "Player") {
-			Application.LoadLevel (5);
+			Application.LoadLevel (8);
 		}
 	}
 	void Update(){

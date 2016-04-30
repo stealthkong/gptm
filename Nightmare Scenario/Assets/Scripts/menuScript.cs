@@ -43,7 +43,7 @@ public class menuScript : MonoBehaviour {
 
 	public void StartGod()
 	{
-		Application.LoadLevel (1);
+		Application.LoadLevel (22);
 	}
 
 	public void ExitGame()

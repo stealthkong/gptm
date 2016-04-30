@@ -14,7 +14,7 @@ public class playerCont : MonoBehaviour {
 	public LayerMask whatIsGround;
 	public float jumpForce = 300f;
 	public int deathCount = 0;
-	public GUIText livesBox;
+	public GameObject barb;
 	public bool playerDead;
 	public GameObject restartText;
 	public GameObject pressKey;
@@ -23,6 +23,7 @@ public class playerCont : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 
+		barb.SetActive (true);
 		anim = GetComponent<Animator> ();
 
 	}
@@ -61,8 +62,6 @@ public class playerCont : MonoBehaviour {
 
 	void Update()
 	{
-
-		livesBox.text = "Lives Lost: " + deathCount;
 
 		if (grounded && Input.GetKeyDown(KeyCode.Space)) 
 		{
