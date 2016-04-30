@@ -47,10 +47,24 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\DontDestroy.cs" />
      <Compile Include="Assets\Scripts\Door Scripts\doorScriptlv1.cs" />
+     <Compile Include="Assets\Scripts\Door Scripts\doorScriptlv10.cs" />
+     <Compile Include="Assets\Scripts\Door Scripts\doorScriptlv11.cs" />
+     <Compile Include="Assets\Scripts\Door Scripts\doorScriptlv12.cs" />
+     <Compile Include="Assets\Scripts\Door Scripts\doorScriptlv13.cs" />
+     <Compile Include="Assets\Scripts\Door Scripts\doorScriptlv14.cs" />
+     <Compile Include="Assets\Scripts\Door Scripts\doorScriptlv15.cs" />
+     <Compile Include="Assets\Scripts\Door Scripts\doorScriptlv16.cs" />
+     <Compile Include="Assets\Scripts\Door Scripts\doorScriptlv17.cs" />
+     <Compile Include="Assets\Scripts\Door Scripts\doorScriptlv18.cs" />
+     <Compile Include="Assets\Scripts\Door Scripts\doorScriptlv19.cs" />
      <Compile Include="Assets\Scripts\Door Scripts\doorScriptlv2.cs" />
      <Compile Include="Assets\Scripts\Door Scripts\doorScriptlv3.cs" />
      <Compile Include="Assets\Scripts\Door Scripts\doorScriptlv4.cs" />
-     <Compile Include="Assets\Scripts\holdPlayerPlat.cs" />
+     <Compile Include="Assets\Scripts\Door Scripts\doorScriptlv5.cs" />
+     <Compile Include="Assets\Scripts\Door Scripts\doorScriptlv6.cs" />
+     <Compile Include="Assets\Scripts\Door Scripts\doorScriptlv9.cs" />
+     <Compile Include="Assets\Scripts\characterHolder.cs" />
+     <Compile Include="Assets\Scripts\godScript.cs" />
      <Compile Include="Assets\Scripts\laserBullet.cs" />
      <Compile Include="Assets\Scripts\laserGun.cs" />
      <Compile Include="Assets\Scripts\laserScript.cs" />
@@ -59,20 +73,14 @@
      <Compile Include="Assets\Scripts\movingPlatform.cs" />
      <Compile Include="Assets\Scripts\pause.cs" />
      <Compile Include="Assets\Scripts\playerCont.cs" />
-     <Compile Include="Assets\Scripts\playerController.cs" />
      <Compile Include="Assets\Scripts\playerKill.cs" />
      <Compile Include="Assets\Scripts\sawBladeScript.cs" />
- <Reference Include="UnityEngine.Advertisements">
- <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Advertisements/UnityEngine.Advertisements.dll</HintPath>
- </Reference>
+     <Compile Include="Assets\Scripts\spikeKill.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Networking">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.Analytics">
- <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
  </Reference>
  <Reference Include="Mono.Cecil">
  <HintPath>C:/Program Files/Unity/Editor/Data/Managed/Mono.Cecil.dll</HintPath>

@@ -18,7 +18,7 @@ public class playerCont : MonoBehaviour {
 	public bool playerDead;
 	public GameObject restartText;
 	public GameObject pressKey;
-	public int level = 1;
+	//public int level = 1;
 
 	// Use this for initialization
 	void Start () {
@@ -35,7 +35,7 @@ public class playerCont : MonoBehaviour {
 			pressKey.SetActive(true);
 
 			if(Input.GetKeyDown (KeyCode.R))
-				Application.LoadLevel (level);
+				Application.LoadLevel (Application.loadedLevel);
 			return;
 
 		}
@@ -110,7 +110,6 @@ public class playerCont : MonoBehaviour {
 			deathCount += 1;
 			//Application.LoadLevel (1);
 		}
-
 		//if (other.tag == "door") {
 			//if(Input.GetKeyDown (KeyCode.W))
 			//{

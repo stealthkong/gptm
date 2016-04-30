@@ -7,7 +7,7 @@
 
 	private bool paused = false;
 
-	public AudioSource audio;
+	//public AudioSource audio;
 
 	public Canvas pauseMenu;
 
@@ -16,7 +16,7 @@
 	void Start(){
 
 		PauseUI.SetActive(false);
-		GetComponent<AudioSource> ().Stop ();
+		//GetComponent<AudioSource> ().Stop ();
 		quitMenu.enabled = false;
 		pauseMenu.enabled = false;
 
@@ -26,7 +26,7 @@
 		if (Input.GetButtonDown ("pauseButton")) {
 			paused = !paused;
 			quitMenu.enabled = false;
-			GetComponent<AudioSource>().Play();
+			//GetComponent<AudioSource>().Play();
 		}
 
 		if (paused) {
@@ -41,20 +41,20 @@
 			PauseUI.SetActive(false);
 			pauseMenu.enabled = false;
 			Time.timeScale = 1;
-			GetComponent<AudioSource> ().Stop ();
+		//	GetComponent<AudioSource> ().Stop ();
 		}
 	}
 
 	public void Resume(){
 
 		paused = false;
-		GetComponent<AudioSource> ().Stop ();
+		//GetComponent<AudioSource> ().Stop ();
 	}
 
 	public void quitButton(){
 
 		Application.LoadLevel (0);
-		GetComponent<AudioSource> ().Stop ();
+		//GetComponent<AudioSource> ().Stop ();
 	}
 
 	public void quitScreen(){
