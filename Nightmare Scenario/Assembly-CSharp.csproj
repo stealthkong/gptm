@@ -58,12 +58,14 @@
      <Compile Include="Assets\Scripts\Door Scripts\doorScriptlv18.cs" />
      <Compile Include="Assets\Scripts\Door Scripts\doorScriptlv19.cs" />
      <Compile Include="Assets\Scripts\Door Scripts\doorScriptlv2.cs" />
+     <Compile Include="Assets\Scripts\Door Scripts\doorScriptlv20.cs" />
      <Compile Include="Assets\Scripts\Door Scripts\doorScriptlv3.cs" />
      <Compile Include="Assets\Scripts\Door Scripts\doorScriptlv4.cs" />
      <Compile Include="Assets\Scripts\Door Scripts\doorScriptlv5.cs" />
      <Compile Include="Assets\Scripts\Door Scripts\doorScriptlv6.cs" />
      <Compile Include="Assets\Scripts\Door Scripts\doorScriptlv9.cs" />
      <Compile Include="Assets\Scripts\characterHolder.cs" />
+     <Compile Include="Assets\Scripts\endScene.cs" />
      <Compile Include="Assets\Scripts\godDoor Scripts\GodDoorScriptlv1.cs" />
      <Compile Include="Assets\Scripts\godDoor Scripts\GodDoorScriptlv10.cs" />
      <Compile Include="Assets\Scripts\godDoor Scripts\GodDoorScriptlv11.cs" />
@@ -76,6 +78,7 @@
      <Compile Include="Assets\Scripts\godDoor Scripts\GodDoorScriptlv18.cs" />
      <Compile Include="Assets\Scripts\godDoor Scripts\GodDoorScriptlv19.cs" />
      <Compile Include="Assets\Scripts\godDoor Scripts\GodDoorScriptlv2.cs" />
+     <Compile Include="Assets\Scripts\godDoor Scripts\GodDoorScriptlv20.cs" />
      <Compile Include="Assets\Scripts\godDoor Scripts\GodDoorScriptlv3.cs" />
      <Compile Include="Assets\Scripts\godDoor Scripts\GodDoorScriptlv4.cs" />
      <Compile Include="Assets\Scripts\godDoor Scripts\GodDoorScriptlv5.cs" />

@@ -31,9 +31,6 @@ public class godScript : MonoBehaviour {
 	void FixedUpdate () {
 		if (playerDead == true) {
 
-			restartText.SetActive(true);
-			pressKey.SetActive(true);
-
 			if(Input.GetKeyDown (KeyCode.R))
 				Application.LoadLevel (Application.loadedLevel);
 			return;
@@ -69,6 +66,10 @@ public class godScript : MonoBehaviour {
 			anim.SetBool ("Ground", false);
 			GetComponent<Rigidbody2D> ().AddForce(new Vector2(0, jumpForce)); 
 		}
+
+		if(Input.GetKeyDown (KeyCode.R))
+			Application.LoadLevel (Application.loadedLevel);
+		return;
 	}
 
 	void Flip()
